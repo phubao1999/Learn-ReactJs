@@ -4,7 +4,8 @@ import './App.css';
 import Todos from './components/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
-import About from './components/pages/About'
+import About from './components/pages/About';
+import Footter from './components/layout/Footter';
 // import uuid from 'uuid';
 import axios from 'axios';
 
@@ -65,6 +66,7 @@ class App extends React.Component{
             )} />
             <Route path="/about" component={About} />
           </div>
+          <Footter />
         </div>
       </Router>
     )
