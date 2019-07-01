@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.css';
-import Couter from './components/couter';
+import React from "react";
+import "./App.css";
+import Couter from './components/couter'
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Couter />
-    </div>
+    </React.Fragment>
   );
 }
 
