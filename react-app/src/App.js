@@ -1,13 +1,14 @@
-import React from "react";
-import "./App.css";
-import Couters from './components/couters';
+import React, { Component } from 'react';
+import './App.css';
 
-function App() {
-  return (
-    <div>
-      <Couters />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        Hello From App
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
