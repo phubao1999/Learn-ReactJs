@@ -1,14 +1,34 @@
-import React, { Component } from 'react';
-import {link} from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import logo from '../logo.svg';
+// import styled from 'styled-components';
+import {ButtonContainer} from './Button';
 
 class Navbar extends Component {
-    render() {
-        return (
-            <div>
-                <h3>Hello From Navbar</h3>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <nav className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+        <Link to="/">
+            <img src={logo} alt="store" className="navbar-brand" />
+        </Link>
+        <ul className="navbar-nav align-items-center">
+            <li className="nav-item ml-5">
+                <Link to="/" className="nav-link">
+                    Product
+                </Link>
+            </li>
+        </ul>
+        <Link to="/cart" className="ml-auto">
+            <ButtonContainer>
+                <span>
+                    <i className="fas fa-cart-plus mr-2" />
+                </span>
+                my cart
+            </ButtonContainer>
+        </Link>
+      </nav>
+    );
+  }
 }
 
 export default Navbar;
