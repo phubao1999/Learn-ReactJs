@@ -123,4 +123,45 @@ code {
             }
         }
     }
+
+    .actor-container {
+        display: inline-block;
+        text-align: center;
+
+        .actor-img {
+            width: 250px;
+            height: 250px;
+            background-size: cover;
+            cursor: pointer;
+        }
+    }
+
+    .container {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .back {
+        display: inline-block;
+        margin: 5px;
+        border: 1px solid lightgray;
+        padding: 3px 8px;
+        border-radius: 5px;
+        background-color: lightblue;
+        text-decoration: none;
+    }
+
+    .actor-profile-image {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
 }

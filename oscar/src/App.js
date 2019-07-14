@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Actors from "./components/Actors";
 import Actress from "./components/Actress";
 import Films from "./components/Films";
+import ActorsContainer from "./components/ActorContainer";
 
 class App extends Component {
   render() {
@@ -13,14 +14,16 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Nav title="Oscar2019" />
+          <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
           <Route
-            exact
-            path="/"
-            render={() => <Home title="Oscar Winners 2019" />}
+            path="/actors/"
+            render={() => <ActorsContainer title="Best Actors" />}
           />
-          <Route exact path="/actors/" render={() => <Actors />} />
-          <Route exact path="/actress/" render={() => <Actress />} />
-          <Route exact path="/films/" render={() => <Films />} />
+          <Route
+            path="/actress/"
+            render={() => <Actress title="Best Actress" />}
+          />
+          <Route path="/films" render={() => <Films title="Best Films" />} />
         </div>
       </BrowserRouter>
     );
