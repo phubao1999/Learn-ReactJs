@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../css/style.css";
+import { NavLink } from "react-router-dom";
 
 class Nav extends Component {
   render() {
@@ -8,30 +9,30 @@ class Nav extends Component {
         <div className="App">
           <nav>
             <h2 className="logo">
-              <a href="#" className="logo-link">
-                Oscars 2019
-              </a>
+              <NavLink to="/" className="logo-link">
+                {this.props.title}
+              </NavLink>
             </h2>
             <ul className="nav-menu">
               <li>
-                <a href="#" className="nav-menu-link">
+                <NavLink exact to="/" className="nav-menu-link">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="nav-menu-link">
+                <NavLink to="/actors" className="nav-menu-link">
                   Best Actor
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="nav-menu-link">
+                <NavLink to="/actress" className="nav-menu-link">
                   Best Actress
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#" className="nav-menu-link">
+                <NavLink to="/films" className="nav-menu-link">
                   Best Film
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>

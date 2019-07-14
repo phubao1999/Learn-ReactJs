@@ -54,4 +54,81 @@ code {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+.App nav .nav-menu li .nav-menu-link.active {
+  background: royalblue;
+  color: white;
+}
+
+.App .name-content {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+.App .name-content .container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.App .name-content .container .home-image {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/02/24211315/0f4be43c4171da2bfcd53c97632fc0c8c1c86f858206393bcf7598f2b2ac6da7-770x443.jpg");
+  background-size: cover;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.App .name-content .container .home-image:hover {
+  background-image: url("https://2.bp.blogspot.com/-zMVthXi96_U/XHQQJ_z4WPI/AAAAAAACr6c/M0dHRObcGOgrdHdrIdUY8F0RNKd8LGBVACLcBGAs/s1600/oscars-2019-winner-list.jpg");
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.App .name-content .container .thumbnail-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.App .name-content .container .thumbnail-container .home-thumbnail-1,
+.App .name-content .container .thumbnail-container .home-thumbnail-2,
+.App .name-content .container .thumbnail-container .home-thumbnail-3 {
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.App .name-content .container .thumbnail-container .home-thumbnail-1:hover,
+.App .name-content .container .thumbnail-container .home-thumbnail-2:hover,
+.App .name-content .container .thumbnail-container .home-thumbnail-3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.App .name-content .container .thumbnail-container .home-thumbnail-1 {
+  background-image: url("https://cdn1.thr.com/sites/default/files/imagecache/list_landscape_960x541/2019/02/_jaime_ray_newman_and_guy_nattiv_accept_the_best_live_action_short_film_award_for_skin_onstage_during_the_91st_annual_academy_awards-oscars_2019-getty-h_2019.jpg");
+}
+
+.App .name-content .container .thumbnail-container .home-thumbnail-2 {
+  background-image: url("https://pmcvariety.files.wordpress.com/2019/02/green-book-3.jpg");
+}
+
+.App .name-content .container .thumbnail-container .home-thumbnail-3 {
+  background-image: url("https://www.latimes.com/resizer/RbwSuCvS8BBrJLnyK7UaqoxzFqU=/1200x0/www.trbimg.com/img-5c737ca5/turbine/la-1551072417-08muj3mbas-snap-image");
+}
 /*# sourceMappingURL=style.css.map */
